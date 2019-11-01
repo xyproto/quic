@@ -9,7 +9,7 @@ import (
 	"crypto/tls"
 	"reflect"
 
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 )
 
 func init() {

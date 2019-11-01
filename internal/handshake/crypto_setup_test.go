@@ -18,7 +18,7 @@ import (
 	"github.com/xyproto/quic/internal/qerr"
 	"github.com/xyproto/quic/internal/testdata"
 	"github.com/xyproto/quic/internal/utils"
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

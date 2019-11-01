@@ -13,7 +13,7 @@ import (
 	"github.com/xyproto/quic/internal/protocol"
 	"github.com/xyproto/quic/internal/qerr"
 	"github.com/xyproto/quic/internal/utils"
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 )
 
 const (

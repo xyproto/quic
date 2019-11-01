@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 
 	"github.com/xyproto/quic/internal/protocol"
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 )
 
 type sealer struct {

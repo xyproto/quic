@@ -6,7 +6,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 )
 
 type conn struct {

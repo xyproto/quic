@@ -17,8 +17,6 @@ github.com/marten-seemann/chacha20
 github.com/marten-seemann/chacha20/internal/subtle
 # github.com/marten-seemann/qpack v0.1.0
 github.com/marten-seemann/qpack
-# github.com/marten-seemann/qtls v0.4.1
-github.com/marten-seemann/qtls
 # github.com/onsi/ginkgo v1.7.0
 github.com/onsi/ginkgo
 github.com/onsi/ginkgo/config

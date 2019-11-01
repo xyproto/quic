@@ -14,7 +14,7 @@ import (
 	"github.com/xyproto/quic/internal/utils"
 
 	"github.com/xyproto/quic/internal/protocol"
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 )
 
 // By setting this environment variable, the key update interval can be adjusted.

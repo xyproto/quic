@@ -6,7 +6,7 @@ import (
 
 	"github.com/alangpierce/go-forceexport"
 	"github.com/golang/mock/gomock"
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
@@ -53,7 +53,7 @@ var cipherSuites = []*qtls.CipherSuiteTLS13{
 }
 
 func init() {
-	if err := forceexport.GetFunc(&aeadChaCha20Poly1305, "github.com/marten-seemann/qtls.aeadChaCha20Poly1305"); err != nil {
+	if err := forceexport.GetFunc(&aeadChaCha20Poly1305, "github.com/xyproto/qtls.aeadChaCha20Poly1305"); err != nil {
 		panic(err)
 	}
 	for _, s := range cipherSuites {

@@ -5,7 +5,7 @@ import (
 	"errors"
 
 	gomock "github.com/golang/mock/gomock"
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

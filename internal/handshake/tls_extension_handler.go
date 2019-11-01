@@ -2,7 +2,7 @@ package handshake
 
 import (
 	"github.com/xyproto/quic/internal/protocol"
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 )
 
 const quicTLSExtensionType = 0xffa5

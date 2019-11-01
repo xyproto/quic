@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/marten-seemann/chacha20"
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 )
 
 type headerProtector interface {
