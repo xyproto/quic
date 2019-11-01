@@ -20,7 +20,7 @@
 
 - Drop support for gQUIC. For qQUIC support, please switch to the *gquic* branch.
 - Implement QUIC WG draft-19.
-- Use [qtls](https://github.com/marten-seemann/qtls) for TLS 1.3.
+- Use qtls for TLS 1.3.
 - Return a `tls.ConnectionState` from `quic.Session.ConnectionState()`.
 - Remove the error return values from `quic.Stream.CancelRead()` and `quic.Stream.CancelWrite()`
 
