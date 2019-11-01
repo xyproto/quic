@@ -1,7 +1,7 @@
 package handshake
 
 import (
-	"github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/xyproto/quic/internal/protocol"
 	"github.com/marten-seemann/qtls"
 
 	. "github.com/onsi/ginkgo"

@@ -7,7 +7,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/xyproto/quic/internal/utils"
 
 	//nolint:stylecheck
 	. "github.com/onsi/ginkgo"

@@ -4,7 +4,7 @@ package quic
 import (
 	"github.com/cheekybits/genny/generic"
 
-	"github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/xyproto/quic/internal/protocol"
 )
 
 // In the auto-generated streams maps, we need to be able to close the streams.

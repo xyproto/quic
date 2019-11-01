@@ -3,7 +3,7 @@ package quic
 import (
 	"sync"
 
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/xyproto/quic/internal/utils"
 )
 
 type closedSession interface {

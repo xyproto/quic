@@ -8,11 +8,11 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	_ "github.com/lucas-clemente/quic-go/integrationtests/tools/testlog"
-	"github.com/lucas-clemente/quic-go/internal/testdata"
+	_ "github.com/xyproto/quic/integrationtests/tools/testlog"
+	"github.com/xyproto/quic/internal/testdata"
 )
 
-const alpn = "quic-go integration tests"
+const alpn = "quic integration tests"
 
 func getTLSConfig() *tls.Config {
 	conf := testdata.GetTLSConfig()

@@ -10,11 +10,11 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	"github.com/lucas-clemente/quic-go/internal/handshake"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/utils"
-	"github.com/lucas-clemente/quic-go/internal/wire"
-	"github.com/lucas-clemente/quic-go/quictrace"
+	"github.com/xyproto/quic/internal/handshake"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/utils"
+	"github.com/xyproto/quic/internal/wire"
+	"github.com/xyproto/quic/quictrace"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
@@ -632,7 +632,7 @@ var _ = Describe("Client", func() {
 				Eventually(done).Should(BeClosed())
 			})
 
-			It("errors if the version is supported by quic-go, but disabled by the quic.Config", func() {
+			It("errors if the version is supported by quic, but disabled by the quic.Config", func() {
 				sess := NewMockQuicSession(mockCtrl)
 				done := make(chan struct{})
 				sess.EXPECT().destroy(gomock.Any()).Do(func(err error) {

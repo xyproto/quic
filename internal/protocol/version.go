@@ -27,7 +27,7 @@ const (
 // must be in sorted descending order
 var SupportedVersions = []VersionNumber{VersionTLS}
 
-// IsValidVersion says if the version is known to quic-go
+// IsValidVersion says if the version is known to quic
 func IsValidVersion(v VersionNumber) bool {
 	return v == VersionTLS || IsSupportedVersion(SupportedVersions, v)
 }

@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-// LogLevel of quic-go
+// LogLevel of quic
 type LogLevel uint8
 
 const (
@@ -36,7 +36,7 @@ type Logger interface {
 	Debugf(format string, args ...interface{})
 }
 
-// DefaultLogger is used by quic-go for logging.
+// DefaultLogger is used by quic for logging.
 var DefaultLogger Logger
 
 type defaultLogger struct {
@@ -125,7 +125,7 @@ func readLoggingEnv() LogLevel {
 	case "error":
 		return LogLevelError
 	default:
-		fmt.Fprintln(os.Stderr, "invalid quic-go log level, see https://github.com/lucas-clemente/quic-go/wiki/Logging")
+		fmt.Fprintln(os.Stderr, "invalid quic log level, see https://github.com/xyproto/quic/wiki/Logging")
 		return LogLevelNothing
 	}
 }

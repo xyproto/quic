@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/lucas-clemente/quic-go"
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/xyproto/quic"
+	"github.com/xyproto/quic/internal/utils"
 	"github.com/marten-seemann/qpack"
 	"golang.org/x/net/http/httpguts"
 	"golang.org/x/net/http2/hpack"

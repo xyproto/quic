@@ -10,11 +10,11 @@ import (
 	"net/http"
 	"time"
 
-	quic "github.com/lucas-clemente/quic-go"
-	"github.com/lucas-clemente/quic-go/http3"
-	"github.com/lucas-clemente/quic-go/integrationtests/tools/testserver"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/testdata"
+	quic "github.com/xyproto/quic"
+	"github.com/xyproto/quic/http3"
+	"github.com/xyproto/quic/integrationtests/tools/testserver"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/testdata"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

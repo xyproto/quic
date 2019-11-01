@@ -5,9 +5,9 @@ import (
 	"errors"
 	"io"
 
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/qerr"
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/qerr"
+	"github.com/xyproto/quic/internal/utils"
 )
 
 // A StreamFrame of QUIC

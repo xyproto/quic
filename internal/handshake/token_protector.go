@@ -65,7 +65,7 @@ func (s *tokenProtectorImpl) DecodeToken(p []byte) ([]byte, error) {
 }
 
 func (s *tokenProtectorImpl) createAEAD(nonce []byte) (cipher.AEAD, []byte, error) {
-	h := hkdf.New(sha256.New, s.secret, nonce, []byte("quic-go token source"))
+	h := hkdf.New(sha256.New, s.secret, nonce, []byte("quic token source"))
 	key := make([]byte, 32) // use a 32 byte key, in order to select AES-256
 	if _, err := io.ReadFull(h, key); err != nil {
 		return nil, nil, err

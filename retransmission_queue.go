@@ -3,8 +3,8 @@ package quic
 import (
 	"fmt"
 
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/wire"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/wire"
 )
 
 type retransmissionQueue struct {

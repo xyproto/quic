@@ -11,12 +11,12 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/lucas-clemente/quic-go"
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/xyproto/quic"
+	"github.com/xyproto/quic/internal/utils"
 	"github.com/marten-seemann/qpack"
 )
 
-const defaultUserAgent = "quic-go HTTP/3"
+const defaultUserAgent = "quic HTTP/3"
 const defaultMaxResponseHeaderBytes = 10 * 1 << 20 // 10 MB
 
 var defaultQuicConfig = &quic.Config{

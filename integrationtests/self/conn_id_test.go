@@ -7,9 +7,9 @@ import (
 	"math/rand"
 	"net"
 
-	quic "github.com/lucas-clemente/quic-go"
-	"github.com/lucas-clemente/quic-go/integrationtests/tools/testserver"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
+	quic "github.com/xyproto/quic"
+	"github.com/xyproto/quic/integrationtests/tools/testserver"
+	"github.com/xyproto/quic/internal/protocol"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

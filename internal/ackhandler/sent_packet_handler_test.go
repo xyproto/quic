@@ -5,11 +5,11 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	"github.com/lucas-clemente/quic-go/internal/congestion"
-	"github.com/lucas-clemente/quic-go/internal/mocks"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/utils"
-	"github.com/lucas-clemente/quic-go/internal/wire"
+	"github.com/xyproto/quic/internal/congestion"
+	"github.com/xyproto/quic/internal/mocks"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/utils"
+	"github.com/xyproto/quic/internal/wire"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

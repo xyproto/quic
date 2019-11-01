@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strconv"
 
-	quic "github.com/lucas-clemente/quic-go"
-	"github.com/lucas-clemente/quic-go/http3"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/testdata"
+	quic "github.com/xyproto/quic"
+	"github.com/xyproto/quic/http3"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/testdata"
 
 	//nolint:stylecheck
 	. "github.com/onsi/ginkgo"

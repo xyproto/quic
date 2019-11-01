@@ -13,15 +13,15 @@ import (
 	. "github.com/onsi/gomega"
 
 	"github.com/golang/mock/gomock"
-	"github.com/lucas-clemente/quic-go/internal/ackhandler"
-	"github.com/lucas-clemente/quic-go/internal/handshake"
-	"github.com/lucas-clemente/quic-go/internal/mocks"
-	mockackhandler "github.com/lucas-clemente/quic-go/internal/mocks/ackhandler"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/qerr"
-	"github.com/lucas-clemente/quic-go/internal/testutils"
-	"github.com/lucas-clemente/quic-go/internal/utils"
-	"github.com/lucas-clemente/quic-go/internal/wire"
+	"github.com/xyproto/quic/internal/ackhandler"
+	"github.com/xyproto/quic/internal/handshake"
+	"github.com/xyproto/quic/internal/mocks"
+	mockackhandler "github.com/xyproto/quic/internal/mocks/ackhandler"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/qerr"
+	"github.com/xyproto/quic/internal/testutils"
+	"github.com/xyproto/quic/internal/utils"
+	"github.com/xyproto/quic/internal/wire"
 )
 
 type mockConnection struct {

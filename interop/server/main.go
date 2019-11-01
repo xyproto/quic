@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/lucas-clemente/quic-go"
-	"github.com/lucas-clemente/quic-go/http3"
-	"github.com/lucas-clemente/quic-go/internal/testdata"
-	"github.com/lucas-clemente/quic-go/interop/http09"
+	"github.com/xyproto/quic"
+	"github.com/xyproto/quic/http3"
+	"github.com/xyproto/quic/internal/testdata"
+	"github.com/xyproto/quic/interop/http09"
 )
 
 func main() {
@@ -33,7 +33,7 @@ func main() {
 	case "handshake", "transfer", "resumption":
 		err = runHTTP09Server(quicConf)
 	case "retry":
-		// By default, quic-go performs a Retry on every incoming connection.
+		// By default, quic performs a Retry on every incoming connection.
 		quicConf.AcceptToken = nil
 		err = runHTTP09Server(quicConf)
 	case "http3":

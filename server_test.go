@@ -10,12 +10,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lucas-clemente/quic-go/internal/handshake"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/testdata"
-	"github.com/lucas-clemente/quic-go/internal/utils"
-	"github.com/lucas-clemente/quic-go/internal/wire"
-	"github.com/lucas-clemente/quic-go/quictrace"
+	"github.com/xyproto/quic/internal/handshake"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/testdata"
+	"github.com/xyproto/quic/internal/utils"
+	"github.com/xyproto/quic/internal/wire"
+	"github.com/xyproto/quic/quictrace"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

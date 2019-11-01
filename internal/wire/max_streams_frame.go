@@ -3,8 +3,8 @@ package wire
 import (
 	"bytes"
 
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/utils"
 )
 
 // A MaxStreamsFrame is a MAX_STREAMS frame

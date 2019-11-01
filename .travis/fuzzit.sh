@@ -18,7 +18,7 @@ chmod a+x fuzzit
 ## Install go-fuzz
 go get -u github.com/dvyukov/go-fuzz/go-fuzz github.com/dvyukov/go-fuzz/go-fuzz-build
 
-# install quic-go
+# install quic
 go get -d -v -u ./...
 
 cd fuzzing/header
@@ -32,5 +32,5 @@ clang -fsanitize=fuzzer fuzz-frames.a -o fuzz-frames
 cd ../..
 
 # Create the jobs
-./fuzzit create job --type ${FUZZING_TYPE} --branch ${BRANCH} --revision=${TRAVIS_COMMIT} quic-go/fuzz-header fuzzing/header/fuzz-header
-./fuzzit create job --type ${FUZZING_TYPE} --branch ${BRANCH} --revision=${TRAVIS_COMMIT} quic-go/fuzz-frames fuzzing/frames/fuzz-frames
+./fuzzit create job --type ${FUZZING_TYPE} --branch ${BRANCH} --revision=${TRAVIS_COMMIT} quic/fuzz-header fuzzing/header/fuzz-header
+./fuzzit create job --type ${FUZZING_TYPE} --branch ${BRANCH} --revision=${TRAVIS_COMMIT} quic/fuzz-frames fuzzing/frames/fuzz-frames

@@ -7,16 +7,16 @@ import (
 	"net"
 	"time"
 
-	"github.com/lucas-clemente/quic-go/internal/ackhandler"
+	"github.com/xyproto/quic/internal/ackhandler"
 
 	"github.com/golang/mock/gomock"
-	"github.com/lucas-clemente/quic-go/internal/handshake"
-	"github.com/lucas-clemente/quic-go/internal/mocks"
-	mockackhandler "github.com/lucas-clemente/quic-go/internal/mocks/ackhandler"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/wire"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/xyproto/quic/internal/handshake"
+	"github.com/xyproto/quic/internal/mocks"
+	mockackhandler "github.com/xyproto/quic/internal/mocks/ackhandler"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/wire"
 )
 
 var _ = Describe("Packet packer", func() {

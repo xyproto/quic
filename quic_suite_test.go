@@ -30,14 +30,14 @@ var _ = BeforeEach(func() {
 func areSessionsRunning() bool {
 	var b bytes.Buffer
 	pprof.Lookup("goroutine").WriteTo(&b, 1)
-	return strings.Contains(b.String(), "quic-go.(*session).run")
+	return strings.Contains(b.String(), "quic.(*session).run")
 }
 
 func areClosedSessionsRunning() bool {
 	var b bytes.Buffer
 	pprof.Lookup("goroutine").WriteTo(&b, 1)
-	return strings.Contains(b.String(), "quic-go.(*closedLocalSession).run") ||
-		strings.Contains(b.String(), "quic-go.(*closedRemoteSession).run")
+	return strings.Contains(b.String(), "quic.(*closedLocalSession).run") ||
+		strings.Contains(b.String(), "quic.(*closedRemoteSession).run")
 }
 
 var _ = AfterEach(func() {

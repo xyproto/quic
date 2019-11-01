@@ -7,10 +7,10 @@ import (
 	"net"
 	"time"
 
-	quic "github.com/lucas-clemente/quic-go"
-	"github.com/lucas-clemente/quic-go/integrationtests/tools/israce"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/qerr"
+	quic "github.com/xyproto/quic"
+	"github.com/xyproto/quic/integrationtests/tools/israce"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/qerr"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lucas-clemente/quic-go/internal/ackhandler"
-	"github.com/lucas-clemente/quic-go/internal/flowcontrol"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/wire"
+	"github.com/xyproto/quic/internal/ackhandler"
+	"github.com/xyproto/quic/internal/flowcontrol"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/internal/wire"
 )
 
 // The streamSender is notified by the stream about various events.

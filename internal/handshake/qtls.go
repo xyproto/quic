@@ -40,7 +40,7 @@ func (c *clientSessionCache) Get(sessionKey string) (*qtls.ClientSessionState, b
 		return nil, ok
 	}
 	// qtls.ClientSessionState is identical to the tls.ClientSessionState.
-	// In order to allow users of quic-go to use a tls.Config,
+	// In order to allow users of quic to use a tls.Config,
 	// we need this workaround to use the ClientSessionCache.
 	// In unsafe.go we check that the two structs are actually identical.
 	usess := (*[unsafe.Sizeof(*sess)]byte)(unsafe.Pointer(sess))[:]
@@ -56,7 +56,7 @@ func (c *clientSessionCache) Put(sessionKey string, cs *qtls.ClientSessionState)
 		return
 	}
 	// qtls.ClientSessionState is identical to the tls.ClientSessionState.
-	// In order to allow users of quic-go to use a tls.Config,
+	// In order to allow users of quic to use a tls.Config,
 	// we need this workaround to use the ClientSessionCache.
 	// In unsafe.go we check that the two structs are actually identical.
 	usess := (*[unsafe.Sizeof(*cs)]byte)(unsafe.Pointer(cs))[:]

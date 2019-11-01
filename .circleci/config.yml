@@ -9,12 +9,12 @@ executors:
     docker:
       - image: circleci/buildpack-deps:stretch
     environment:
-      IMAGE_NAME: martenseemann/quic-go-interop
+      IMAGE_NAME: martenseemann/quic-interop
 
 jobs:
   test:
     executor: test
-    working_directory: /go/src/github.com/lucas-clemente/quic-go
+    working_directory: /go/src/github.com/xyproto/quic
     steps:
       - checkout
       - run:
@@ -63,10 +63,10 @@ jobs:
           at: /tmp/workspace
       - setup_remote_docker
       - run:
-          name: Load archived Docker image 
+          name: Load archived Docker image
           command: docker load -i /tmp/workspace/image.tar
       - run:
-          name: Publish quic-go-interop
+          name: Publish quic-interop
           command: |
             echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
             docker push $IMAGE_NAME:latest

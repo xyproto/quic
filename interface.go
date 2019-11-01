@@ -7,8 +7,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/quictrace"
+	"github.com/xyproto/quic/internal/protocol"
+	"github.com/xyproto/quic/quictrace"
 )
 
 // The StreamID is the ID of a QUIC stream.

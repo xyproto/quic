@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/lucas-clemente/quic-go/http3"
-	"github.com/lucas-clemente/quic-go/interop/http09"
+	"github.com/xyproto/quic/http3"
+	"github.com/xyproto/quic/interop/http09"
 	"golang.org/x/sync/errgroup"
 )
 
