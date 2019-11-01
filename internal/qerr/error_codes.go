@@ -3,7 +3,7 @@ package qerr
 import (
 	"fmt"
 
-	"github.com/marten-seemann/qtls"
+	"github.com/xyproto/qtls"
 )
 
 // ErrorCode can be used as a normal error without reason.

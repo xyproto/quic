@@ -11,7 +11,8 @@ require (
 	github.com/marten-seemann/qpack v0.1.0
 	github.com/onsi/ginkgo v1.7.0
 	github.com/onsi/gomega v1.4.3
-	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472
+	github.com/xyproto/qtls v1.0.0
+	golang.org/x/crypto v0.0.0-20191029031824-8986dd9e96cf
 	golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3
 	golang.org/x/sync v0.0.0-20180314180146-1d60e4601c6f
 )
